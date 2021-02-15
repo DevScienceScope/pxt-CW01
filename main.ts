@@ -901,7 +901,7 @@ namespace cw01 {
     */
     //% weight=91
     //% group="MQTT"
-    //% blockId="IoTMQTTConnect" block="CW01 connect to MQTT broker URL %broker with username %Username and password %Password"
+    //% blockId="IoTMQTTConnect" block="CW01 connect to MQTT broker URL %broker with username %Username and password %Password" 
     export function IoTMQTTConnect(broker: string, Username: string, Password: string): void {
 
         serial.writeString("AT+CIPSTART=\"TCP\",\"" + broker + "\",8883" + cw01_vars.NEWLINE)
