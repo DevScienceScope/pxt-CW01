@@ -904,7 +904,7 @@ namespace cw01 {
     //% blockId="IoTMQTTConnect" block="CW01 connect to MQTT broker URL %broker with username %Username and password %Password"
     export function IoTMQTTConnect(broker: string, Username: string, Password: string): void {
 
-        serial.writeString("AT+CIPSTART=\"TCP\",\"" + broker + "\",1883" + cw01_vars.NEWLINE)
+        serial.writeString("AT+CIPSTART=\"TCP\",\"" + broker + "\",8883" + cw01_vars.NEWLINE)
         basic.pause(7000)
 
         let protocol_name_prior: Buffer = pins.packBuffer("!H", [4])
